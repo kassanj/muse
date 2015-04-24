@@ -1,7 +1,11 @@
 = simple_form_for @post do |f|
-	= f.input :image
-	= f.input :title
-	= f.input :link
-	= f.input :description
+	
+	%p= f.input :image, label: false
 
-	= f.button :submit
+	%p= f.input :title, label: false, placeholder: "Title" 
+
+	%p= f.input :link, label: false, placeholder: "Website"
+
+	%p= f.input :description, label: false, placeholder: "Description"
+
+	%p= f.button :submit

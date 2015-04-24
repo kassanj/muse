@@ -13,3 +13,20 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+//= require masonry/jquery.masonry
+
+
+// $(document).ready(function(){ 
+
+//     $("a.data").hide();     
+
+//     // Deleting an Individual Service
+//     $("div.comment").mouseover( function() {
+//         $("a.data").show();
+//     });
+
+//     $("div.comment").mouseleave( function() {
+//         $("a.data").hide();
+//     });
+
+// });

@@ -40,11 +40,16 @@
 								%i.fa.fa-thumbs-o-up
 								= @random_post.get_likes.size
 
+
 #comments
 	%h2.comment_count= pluralize(@post.comments.count, "Comment")
 	- @comments.each do |comment|
 		.comment
-			%p.username= comment.user.name
+			%p.username= comment.user.name 
 			%p.content= comment.content
+		- if comment.user == current_user
+			= link_to (image_tag 'delete.png'),[comment.post, comment], method: :delete, data: { confirm: "Are you sure?" }, class: "data"
+			
+			
 
 	= render "comments/form"

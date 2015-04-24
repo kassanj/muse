@@ -11,13 +11,13 @@
 #posts {
 	.post {
 		background: #F8F9FA;
-		width: 30%;
+		width: 100%;
 		float: left;
 		margin: 1rem 1.5%;
 		border: 1px solid #E4E4E4;
 		border-radius: 0.3rem;
 		.post_image {
-			height: 200px;
+			height: 100%;
 			overflow: hidden;
 			img {
 				width: 100%;

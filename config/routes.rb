@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :jobs
+
   devise_for :users
   resources :posts do 
     member do
@@ -8,5 +10,6 @@ Rails.application.routes.draw do
     resources :comments
   end 
 
+    get 'jobs_path', to: "jobs#index"
   root 'posts#index'
 end
