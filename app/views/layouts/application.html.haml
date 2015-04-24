@@ -1,7 +1,7 @@
 !!!
 %html
 %head
-	%title Musae
+	%title Museo
 	= stylesheet_link_tag    'application', media: 'all'
 	= javascript_include_tag 'application'
 	%link{:rel => "stylesheet", :href => "http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css"}
@@ -10,7 +10,7 @@
 %body
 	%header
 		.wrapper.clearfix
-			#logo= link_to "Muse", root_path
+			#logo= link_to "Museo", root_path
 			%nav
 				- if user_signed_in?
 					= link_to current_user.name, edit_user_registration_path

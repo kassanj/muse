@@ -25,6 +25,10 @@ gem 'paperclip', '~> 4.2.1'
 gem 'simple_form', '~> 3.1.0'
 gem 'acts_as_votable', '~> 0.10.0'
 gem 'masonry-rails', '~> 0.2.4'
+gem 'aws-sdk', '~> 1.36.1'
+gem "figaro"
+gem "fog"
+
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
